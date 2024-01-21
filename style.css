@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3498db, #2c3e50);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 29vh;
+    margin: 30vh;
+  }
+  
+  #todo-container {
+    max-width: 500px;
+    margin: 60px auto;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+  #tasks-list {
+    list-style-type: none;
+    padding: 7px;
+    text-align: left;
+    background-color: transparent;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 8px 0;
+
+    border-radius: 6px;
+  }
+  
+  .task:hover{
+    background-color: #3588db1f;
+    box-shadow: 4px 2px 3px 3px  #ddd;
+    
+  }
+  .task input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .edit-btn, .done-btn, .delete-btn {
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5e7777b2;
+  }
+  .delete-btn {
+    border:#2c3e50  solid 2px;
+  
+    color: #fff;
+  }
+  .edit-btn, .done-btn {
+    border:#2c3e50  solid 2px;
+
+    color: #fff;
+  }
+  .edit-btn:hover{
+    background-color: green;
+  }
+  
+   .done-btn:hover{
+    background-color: green;
+  }
+  
+  .delete-btn:hover {
+  background-color: red;
+  }
+  .delete{
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+  }
+  .delete:hover{
+    background-color: red;
+    border-radius: 4px;
+    color: #ddd;
+    
+  }
+  .task-btn{
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+  }
+  .task-btn:hover{
+    background-color: green;
+    border-radius: 4px;
+    color: #ddd;
+  }
